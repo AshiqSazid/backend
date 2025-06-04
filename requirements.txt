@@ -1,0 +1,16 @@
+Django==4.2
+celery
+python-decouple
+djangorestframework
+rest_framework_simplejwt
+corsheaders
+drf-yasg
+psycopg2-binary
+numpy
+pandas
+librosa
+soundfile
+spleeter
+openl3
+scikit-learn
+joblib
