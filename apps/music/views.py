@@ -8,7 +8,7 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 from .models import Song, SongChunk
 from .serializers import SongSerializer, SongListSerializer
-from ..analysis.tasks import analyze_song_task # type: ignore
+from apps.analysis.tasks import analyze_song_task # type: ignore
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
