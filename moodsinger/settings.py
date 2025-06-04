@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'drf_yasg',
 
     # Local apps
-    'apps.authounts',                  # Use only the correct app name
+    'apps.acc',                  # Use only the correct app name
     'apps.music',
     'apps.analysis',
     'apps.feature_settings',
