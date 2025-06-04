@@ -26,8 +26,13 @@ import os
 from pathlib import Path
 from decouple import config
 from datetime import timedelta
+
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = 'django-insecure-gmk1maq&z&*t41ywdxnr)2no&7ve!8ymt!#84+xfn*0mbwf2hg'
+# SECRET_KEY should always be provided via environment variables in
+# production. A default value is supplied for local development only.
+SECRET_KEY = config(
+    'SECRET_KEY', default='django-insecure-change-me'
+)
 DEBUG = config('DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=lambda v: [s.strip() for s in v.split(',')])
 
