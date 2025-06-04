@@ -34,6 +34,7 @@ This repository contains the Django backend for the Moodsinger project.
 The application uses `python-decouple` to load configuration. Define the following variables in your `.env` file:
 
 ```
+SECRET_KEY=your-secret-key
 DEBUG=true
 ALLOWED_HOSTS=localhost,127.0.0.1
 DB_NAME=moodsinger_db
